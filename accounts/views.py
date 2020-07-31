@@ -6,7 +6,7 @@ from .forms import *
 
 # Create your views here.
 def home(request):
-    #orders = Order.objects.all()
+    orders = Order.objects.all()
     customers = Customer.objects.all()
 
     total_cutomers = customers.count()
